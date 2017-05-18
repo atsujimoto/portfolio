@@ -1,7 +1,7 @@
 var app = angular.module('Portfolio', ['ui.router']);
 
-app.config(['$stateProvider', '$urlRouterProvider', '$locationProvider',
-    function($stateProvider, $urlRouterProvider, $locationProvider) {
+app.config(['$stateProvider', '$urlRouterProvider',
+    function($stateProvider, $urlRouterProvider) {
         $urlRouterProvider.otherwise('/404');
 
         $stateProvider
@@ -14,8 +14,6 @@ app.config(['$stateProvider', '$urlRouterProvider', '$locationProvider',
                 templateUrl: 'app/views/projectList.html',
                 controller: 'ProjectListCtrl'
             });
-
-        $locationProvider.html5Mode(true);
     }
 ]);
 

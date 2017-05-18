@@ -36,3 +36,15 @@ header div {
     width: 30%;
     margin: .5em;
 }
+
+@media only screen and (max-width: 992px) {
+    .box {
+        width: 45%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .box {
+        width: 100%;
+    }
+}
