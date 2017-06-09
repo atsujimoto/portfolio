@@ -1,2 +1,15 @@
-<div>
+<div class="container">
+	<div class="row">
+		<div class="project center-align flex col s12">
+			<h1>{{ project.title }}</h1>
+			<div class="links flex between">
+				<a href="{{ project.github }}">GitHub</a>
+				<a href="{{ project.link }}">Live Site</a>
+			</div>
+			<p>{{ project.longDesc }}</p>
+			<div class="project-pics" ng-repeat="image in project.img track by $index">
+      	<img src="{{ image }}" alt="" class="responsive-img">
+    	</div>
+		</div>
+	</div>
 </div>

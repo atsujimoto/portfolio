@@ -11,14 +11,14 @@
       		  {{ project.title }}<i class="material-icons right">more_vert</i>
       		</span>
             <div class="flex between">
-              <a href="{{ project.link.url }}" target="_blank">{{ project.link.title }}</a>
+              <a href="{{ project.link }}" target="_blank">Live Site</a>
               <a href="{{ project.github }}" target="_blank">GitHub</a>
             </div>
           </div>
           <div class="card-reveal">
             <span class="card-title grey-text text-darken-4">
-      		  {{ project.title }}<i class="material-icons right">close</i>
-      		</span>
+      		    <a href="/#/project/{{ key }}">{{ project.title }}</a><i class="material-icons right">close</i>
+      		  </span>
             <p>{{ project.desc }}</p>
           </div>
         </div>
