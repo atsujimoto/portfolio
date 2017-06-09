@@ -2,62 +2,60 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Andrew Tsujimoto</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0/angular.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
-    <script src="app/app.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Andrew Tsujimoto</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0/angular.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+  <script src="app/app.js"></script>
 </head>
 
 <body ng-app="Portfolio">
-    <ul id="hamburger-dropdown" class="dropdown-content">
-        <li><span>Resume</span></li>
-        <li class="divider"></li>
-        <li><a href="#!">PDF</a></li>
-        <li><a href="#!">Text Version</a></li>
-        <li class="divider"></li>
-        <li><a href="#!">Projects</a></li>
-    </ul>
-    <ul id="resume-dropdown" class="dropdown-content">
-        <li><a href="#!">PDF</a></li>
-        <li><a href="#!">Text Version</a></li>
-    </ul>
-    <ul id="projects-dropdown" class="dropdown-content">
-        <li><a href="/#/projects">All</a></li>
-        <li><a href="#!">Project 1</a></li>
-        <li><a href="#!">Project 2</a></li>
-        <li><a href="#!">Project 3</a></li>
-        <li><a href="#!">Project 4</a></li>
-    </ul>
-    <div class="navbar-fixed">
-        <nav>
-            <div class="nav-wrapper">
-                <a href="#!" data-beloworigin="true" data-activates="hamburger-dropdown" class="dropdown-button button-collapse right">
-                    <i class="material-icons">menu</i>
-                </a>
-                <ul id="nav-mobile" class="right hide-on-med-and-down">
-                    <li>
-                        <a href="#!" class="dropdown-button" data-beloworigin="true" data-activates="resume-dropdown">
-                            Resume<i class="material-icons right">arrow_drop_down</i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#!" class="dropdown-button" data-beloworigin="true" data-activates="projects-dropdown">
-                            Projects<i class="material-icons right">arrow_drop_down</i>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </div>
-    <div id="ui-view" ui-view>
-    </div>
+  <ul id="hamburger-dropdown" class="dropdown-content">
+    <li><span>Resume</span></li>
+    <li class="divider"></li>
+    <li><a href="https://drive.google.com/file/d/0B8LVuASja0cMRW1CNGx4Q19Jc0E/view?usp=sharing">PDF</a></li>
+    <li><a href="https://drive.google.com/file/d/0B8LVuASja0cMcmVvVWZENDRsVkk/view?usp=sharing">Text Version</a></li>
+    <li class="divider"></li>
+    <li><a href="/#/projects">Projects</a></li>
+  </ul>
+  <ul id="resume-dropdown" class="dropdown-content">
+    <li><a href="https://drive.google.com/file/d/0B8LVuASja0cMRW1CNGx4Q19Jc0E/view?usp=sharing">PDF</a></li>
+    <li><a href="https://drive.google.com/file/d/0B8LVuASja0cMcmVvVWZENDRsVkk/view?usp=sharing">Text Version</a></li>
+  </ul>
+  <div class="navbar-fixed">
+    <nav>
+      <div class="nav-wrapper">
+        <a href="#!"
+           class="right dropdown-button button-collapse"
+           data-beloworigin="true"
+           data-activates="hamburger-dropdown">
+           <i class="material-icons">menu</i>
+        </a>
+        <a href="/#/" class="brand-logo"><i class="material-icons right">home</i></a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li>
+            <a href="#!"
+               class="dropdown-button"
+               data-beloworigin="true"
+               data-activates="resume-dropdown">
+               Resume<i class="material-icons right">arrow_drop_down</i>
+            </a>
+          </li>
+          <li>
+            <a href="/#/projects">Projects</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <div id="ui-view" ui-view>
+  </div>
 </body>
 
 </html>

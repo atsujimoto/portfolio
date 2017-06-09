@@ -1,8 +1,3 @@
-.flex {
-    display: flex;
-    flex-wrap: wrap;
-}
-
 html,
 body,
 #ui-view {
@@ -11,11 +6,29 @@ body,
     margin: 0;
 }
 
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.between {
+    justify-content: space-between;
+}
+
+.nav-wrapper > a {
+    margin-left: 2em;
+    font-size: 1.5em;
+}
+
+.nav-wrapper ul {
+    margin-right: 2em;
+}
+
 header {
     position: relative;
     width: 100%;
     height: 100%;
-    background: url('/img/zelda.jpg') rgba(120, 120, 120, 0.5) no-repeat center center scroll;
+    background: url('/img/puget-sound.jpg') rgba(120, 120, 120, 0.5) no-repeat center center scroll;
     background-size: cover;
     color: white;
 }
