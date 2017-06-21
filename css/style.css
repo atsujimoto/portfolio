@@ -12,6 +12,10 @@ body,
   flex-wrap: wrap;
 }
 
+.down {
+  flex-direction: column;
+}
+
 .between {
   justify-content: space-between;
 }
@@ -25,7 +29,7 @@ body,
 }
 
 .nav-wrapper {
-  background-color: #015249;
+  background-color: #596D64;
 }
 
 .nav-wrapper > a {
@@ -38,10 +42,6 @@ body,
 
 .nav-wrapper ul {
   margin-right: 2em;
-}
-
-h1, h2 {
-
 }
 
 header {
@@ -70,6 +70,7 @@ header h4 {
 #about {
   padding: 50px;
   font-size: 1.25em;
+  background-color: #F6F2EB;
 }
 
 .about-me-icons {
@@ -88,14 +89,22 @@ header h4 {
   border-radius: 50%;
 }
 
+#project-list {
+  background-color: #F6F2EB;
+}
+
 #project-list p {
   font-size: 1.25em;
+}
+
+.projects-header {
+  margin-bottom: 0;
 }
 
 .projects-div {
   position: absolute;
   min-height: 100vh;
-  background-color: #77C9D4;
+  background-color: #889886;
 }
 
 .cards {
@@ -111,7 +120,15 @@ header h4 {
   position: absolute;
   width: 100%;
   min-height: 100vh;
-  background-color: #57BC90;
+  background-color: #212E36;
+}
+
+#single-project {
+  background-color: #F6F2EB;
+}
+
+.project-header {
+  margin-bottom: 0;
 }
 
 .project {
@@ -129,6 +146,11 @@ header h4 {
 .links {
   width: 20%;
   text-align: center;
+}
+
+.tech li {
+  display: inline;
+  margin: 0 .75em;
 }
 
 .project-pics {

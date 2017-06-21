@@ -1,6 +1,6 @@
 <section id="single-project">
 	<div class="container">
-		<div class="row">
+		<div class="row project-header">
 			<div class="project center-align flex col s12">
 				<h1>{{ project.title }}</h1>
 				<div class="links flex between">
@@ -8,6 +8,14 @@
 					<a href="{{ project.link }}">Live Site</a>
 				</div>
 				<p>{{ project.longDesc }}</p>
+				<div class="flex down">
+					<h4>Technologies Used</h4>
+					<div class="tech">
+						<ul>
+							<li ng-repeat="tech in project.tech track by $index">{{ tech }}</li>
+						</ul>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
