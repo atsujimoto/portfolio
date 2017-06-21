@@ -1,6 +1,16 @@
-<div class="container">
-  <div class="row">
-    <div class="flex col s12">
+<section id="project-list">
+  <div class="container">
+    <div class="row">
+      <div class="row">
+        <div class="col s12 center-align">
+          <h2>Projects</h2>
+          <p>I'm always working on something, but here is some of the work I'm most proud of.  Click on a card to see a brief description and a link to even more information about the project.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row projects-div">
+    <div class="flex around col s12 cards">
       <div ng-repeat="(key, project) in projects track by $index" class="box">
         <div class="card">
           <div class="card-image waves-effect waves-block waves-light">
@@ -25,4 +35,4 @@
       </div>
     </div>
   </div>
-</div>
+</section>

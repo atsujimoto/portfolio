@@ -65,16 +65,19 @@ app.factory('Projects', function() {
       desc: 'Ready to adopt a pet?  Search for a pet and then compare your face with the animals to see how good of a match you are.',
       longDesc: 'I love animals and it upsets me to hear about so many going unadopted.  Designing a web app that encourages people to rescue animals from shelters was both fun and rewarding.  Search for a pet you might like to adopt and then compare their photo to a photo of yourself.  Find your doggleganger today!',
       link: 'http://doggleganger.herokuapp.com/'
+    },
+    '4': {
+      title: 'Chronotron',
+      cover: '/img/chronotron.png',
+      github: 'https://github.com/jigglor/Chronotron',
+      img: ['/img/chronotron1.png',
+            '/img/chronotron2.png',
+            '/img/chronotron3.png',
+            '/img/chronotron4.png'],
+      desc: 'Have some free time?  Chronotron can help you waste it.  Give it a length of time you\'d like to waste and choose a category.  Chronotron will provide you with content to fill that void.',
+      longDesc: 'Chronotron utilizes 5 different APIs:  Youtube, Spotify, OpenTrivia, Trails and OpenWeather.  I worked on this in with a group of 4 other developers and 1 UX/UI consultant.  I was responsible for utilizing the OpenTrivia API to create a trivia game we could use within the app.  I built the backend in Ruby on Rails and used JavaScript and jQuery to create the trivia game.',
+      link: 'https://chronotron.herokuapp.com/'
     }
-    // '4': {
-    //     title: 'Project 4',
-    //     cover: '/img/folder.png',
-    //     github: '#!',
-    //     img: [],
-    //     desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur adipisci officia beatae.',
-    // longDesc: '',
-    //     link: '#!'
-    // },
     // '5': {
     //     title: 'Project 5',
     //     cover: '/img/folder.png',
