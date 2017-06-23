@@ -125,6 +125,7 @@ header h4 {
 
 #single-project {
   background-color: #F6F2EB;
+  font-size: 1.25em;
 }
 
 .project-header {
@@ -170,5 +171,29 @@ header h4 {
 
   .skills ul {
     margin: 0;
+  }
+
+  #about {
+    padding: 10px;
+  }
+
+  #about h2 {
+    text-align: center;
+  }
+
+  .project h1 {
+    font-size: 3em;
+  }
+
+  .links {
+    width: 50%;
+  }
+
+  .tech li{
+    display: block;
+  }
+
+  .project-pics {
+    margin: 1em 0;
   }
 }

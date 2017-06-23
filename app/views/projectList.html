@@ -1,36 +1,38 @@
-<section id="project-list">
-  <div class="container">
-    <div class="row projects-header">
-      <div class="col s12 center-align">
-        <h2>Projects</h2>
-        <p>I'm always working on something, but here is some of the work I'm most proud of.  Click on a card to see a brief description and a link to even more information about the project.</p>
+<main>
+  <section id="project-list">
+    <div class="container">
+      <div class="row projects-header">
+        <div class="col s12 center-align">
+          <h2>Projects</h2>
+          <p>I'm always working on something, but here is some of the work I'm most proud of.  Click on a card to see a brief description and a link to even more information about the project.</p>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="row projects-div">
-    <div class="flex around col s12 cards">
-      <div ng-repeat="(key, project) in projects track by $index" class="box">
-        <div class="card">
-          <div class="card-image waves-effect waves-block waves-light">
-            <img class="activator responsive-img" src="{{ project.cover }}" alt="{{ project.title }}">
-          </div>
-          <div class="card-content">
-            <span class="card-title activator grey-text text-darken-4">
-      		  {{ project.title }}<i class="material-icons right">more_vert</i>
-      		</span>
-            <div class="flex between">
-              <a href="{{ project.link }}" target="_blank">Live Site</a>
-              <a href="{{ project.github }}" target="_blank">GitHub</a>
+    <div class="row projects-div">
+      <div class="flex around col s12 cards">
+        <div ng-repeat="(key, project) in projects track by $index" class="box">
+          <div class="card">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator responsive-img" src="{{ project.cover }}" alt="{{ project.title }}">
             </div>
-          </div>
-          <div class="card-reveal">
-            <span class="card-title grey-text text-darken-4">
-      		    <a href="/#/project/{{ key }}">{{ project.title }}</a><i class="material-icons right">close</i>
-      		  </span>
-            <p>{{ project.desc }}</p>
+            <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4">
+        		  {{ project.title }}<i class="material-icons right">more_vert</i>
+        		</span>
+              <div class="flex between">
+                <a href="{{ project.link }}" target="_blank">Live Site</a>
+                <a href="{{ project.github }}" target="_blank">GitHub</a>
+              </div>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4">
+        		    <a href="/#/project/{{ key }}">{{ project.title }}</a><i class="material-icons right">close</i>
+        		  </span>
+              <p>{{ project.desc }}</p>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
+</main>
