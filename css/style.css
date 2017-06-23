@@ -85,6 +85,29 @@ header h4 {
   padding: 0 !important;
 }
 
+#resumes {
+  background-color: #6B8070;
+  text-align: center;
+}
+
+#resumes h2 {
+  margin-top: 0;
+  padding-top: .5em;
+}
+
+#resumes > .row div {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+#resumes i {
+  color: white;
+}
+
+.btn {
+  margin: 1em;
+}
+
 #profile {
   border-radius: 50%;
 }
