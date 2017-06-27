@@ -34,17 +34,17 @@ app.controller('ProjectShowCtrl', ['$scope', 'Projects', '$stateParams',
 
 app.factory('Projects', function() {
   return {
-    // '1': {
-    //   title: 'Cat Fight!',
-    //   cover: '/img/cat-fight.png',
-    //   github: 'https://github.com/jigglor/u1-project-game',
-    //   img: ['/img/cat-fight1.png',
-    //         '/img/cat-fight2.png'],
-    //   desc: 'A JavaScript, Pokemon-style battle game.  2 players pick 2 cats each and battle to the death!',
-    //   longDesc: 'This was this very first website I ever designed on my own.  I played Pokemon a lot as a kid and I had a ton of fun trying to code a battle system that was reminiscent of those games.  It\'s certainly not as robust or polished, but I hope you have fun playing it nonetheless.',
-    // tech: [],
-    //   link: 'https://jigglor.github.io/u1-project-game/'
-    // },
+    '1': {
+      title: 'Cat Fight!',
+      cover: '/img/cat-fight.png',
+      github: 'https://github.com/jigglor/u1-project-game',
+      img: ['/img/cat-fight1.png',
+            '/img/cat-fight2.png'],
+      desc: 'A JavaScript, Pokemon-style battle game.  2 players pick 2 cats each and battle to the death!',
+      longDesc: 'This was this very first website I ever designed on my own.  I played Pokemon a lot as a kid and I had a ton of fun trying to code a battle system that was reminiscent of those games.  It\'s certainly not as robust or polished, but I hope you have fun playing it nonetheless.',
+      tech: ['HTML', 'CSS', 'JavaScript', 'jQuery'],
+      link: 'https://jigglor.github.io/u1-project-game/'
+    },
     '2': {
       title: 'Brewzaar',
       cover: '/img/brewzaar.png',
